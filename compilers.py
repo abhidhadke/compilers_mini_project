@@ -43,7 +43,7 @@ pipe_lr = Pipeline(steps=[('cv', CountVectorizer()),('lr', LogisticRegression(so
 pipe_lr.fit(x_train, y_train)
 
 #check accuracy
-pipe_lr.score(x_test, y_test)
+print("accuracy: ",pipe_lr.score(x_test, y_test))
 #print(x_test)
 
 #prediction
